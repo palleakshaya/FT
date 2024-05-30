@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var t1 = [400, 300];
+      var t2 = [90, 80];
+      console.log([...t2, ...t1]);
+      // let and const - block scope -{}
+      var x1 = 5;
+      console.log(x1);
+      {
+        function fun() {
+          var t1 = 10;
+          let t2 = 20;
+        }
+      }
+      console.log(t1);
+      console.log(t2);
+
+      function drivingTest(age) {
+        if (age > 18) {
+          let msg = "eligible";
+        } else {
+          let msg = "not eligible";
+        }
+        console.log("They are" + msg);
+      }
+      drivingTest(20);
+    </script>
+    <script src="loops.js"></script>
+  </body>
+</html>
